@@ -1,4 +1,4 @@
-<section class="main-content">
+<section class="main-content" [attr.aria-label]="'Products for ' + productService.selectedCategory() + ' Category'">
   <h2 class="visually-hidden">Products for {{ productService.selectedCategory() }} Category</h2>
   <div class="category-wrapper">
     <div class="side-nav-wrapper">

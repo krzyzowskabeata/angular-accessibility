@@ -6,7 +6,7 @@
     alt="Home - Just like people pet boutique"
     [src]="logoUrl"
   /></a>
-  <nav>
+  <nav aria-label="Main">
     <ul>
       <li>
         <a
@@ -19,7 +19,8 @@
           role="link"
           (click)="toggleMenu()"
           (keydown.escape)="selectCategory('none')"
-          class="menu-option"
+          class="menu-option" 
+          [attr.aria-label]="showMenu"
         >Products
           <span
             [class.rotated-arrow-icon]="showMenu"
