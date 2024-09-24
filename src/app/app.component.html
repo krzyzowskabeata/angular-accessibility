@@ -1,5 +1,6 @@
 <h1 class="visually-hidden">Just Like People Pet Boutique</h1>
 <app-header/>
-<main>
+<!-- IMPORTANT: tabindex="-1" makes main element focusable (which is natively not focusable, as other sectioning elements)-->
+<main id="mainRouter" tabindex="-1">
   <router-outlet/>
 </main>

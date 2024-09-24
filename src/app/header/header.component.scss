@@ -97,6 +97,10 @@ nav {
   overflow: visible;
 }
 
+.selected-item {
+  border-bottom: solid var(--border-width) var(--white);
+}
+
 @media (max-width: 910px) {
   .site-header {
     justify-content: start;
